@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEA37838-0B12-483A-8091-4B1A9A2C9378}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMBA.Validator</RootNamespace>
+    <AssemblyName>EMBA.Validator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>obj\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\FiscaRuntime\modules\LIB_ASPOSE\Aspose.Cells.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA">
+      <HintPath>..\FiscaRuntime\kernel\FISCA.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Presentation">
+      <HintPath>..\FiscaRuntime\kernel\FISCA.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExcelHelper\RowStream.cs" />
+    <Compile Include="ExcelHelper\SheetHelper.cs" />
+    <Compile Include="ExcelHelper\SheetRowSource.cs" />
+    <Compile Include="FieldValidatorFactory.cs" />
+    <Compile Include="FieldValidator\EnumerationEnhancementValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowValidatorFactory.cs" />
+    <Compile Include="RowValidator\AbbreviationValidator.cs" />
+    <Compile Include="RowValidator\AppellationValidator.cs" />
+    <Compile Include="RowValidator\AttendenceSchoolYearSemesterValidator.cs" />
+    <Compile Include="RowValidator\DisciplineSchoolYearSemesterValidator.cs" />
+    <Compile Include="RowValidator\EnrollDateRowValidator.cs" />
+    <Compile Include="RowValidator\FalseRowValidator.cs" />
+    <Compile Include="RowValidator\HotKeyValidator.cs" />
+    <Compile Include="RowValidator\SerialNumberValidator.cs" />
+    <Compile Include="RowValidator\UpdateDateRowValidator.cs" />
+    <Compile Include="RowValidator\UpdatePermrecReasonValidator.cs" />
+    <Compile Include="ValidateMessage\MessageItem.cs" />
+    <Compile Include="ValidateMessage\MessageItemExtensionMethod.cs" />
+    <Compile Include="ValidateMessage\OutputOptions.cs" />
+    <Compile Include="ValidateMessage\RowMessage.cs" />
+    <Compile Include="ValidateMessage\RowMessages.cs" />
+    <Compile Include="Validator\OutputBuilder.cs" />
+    <Compile Include="Validator\ValidatedInfo.cs" />
+    <Compile Include="Validator\ValidatedPair.cs" />
+    <Compile Include="Validator\ValidatePair.cs" />
+    <Compile Include="Validator\ValidatingPair.cs" />
+    <Compile Include="Validator\Validator.cs" />
+    <Compile Include="Validator\Validator_ExtensionMethod.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMBA.DocumentValidator\EMBA.DocumentValidator.csproj">
+      <Project>{A108F18E-D035-45F3-B9D4-F1B612C0DAD9}</Project>
+      <Name>EMBA.DocumentValidator</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
