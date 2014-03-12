@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>obj\Debug\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -36,15 +36,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aspose.Cells">
-      <HintPath>..\FiscaRuntime\modules\LIB_ASPOSE\Aspose.Cells.dll</HintPath>
+      <HintPath>Library\Aspose.Cells.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FISCA">
-      <HintPath>..\FiscaRuntime\kernel\FISCA.dll</HintPath>
+      <HintPath>Library\FISCA.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FISCA.Presentation">
-      <HintPath>..\FiscaRuntime\kernel\FISCA.Presentation.dll</HintPath>
+      <HintPath>Library\FISCA.Presentation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

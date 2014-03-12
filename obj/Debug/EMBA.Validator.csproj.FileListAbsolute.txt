@@ -3,3 +3,8 @@ E:\TFServer2013\ischoolteam\ischool_EMBA\FiscaRuntime\addmodules\Validator\EMBA.
 E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Validator\obj\Debug\EMBA.Validator.csprojResolveAssemblyReference.cache
 E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Validator\obj\Debug\EMBA.Validator.dll
 E:\TFServer2013\ischoolteam\ischool_EMBA\EMBA.Validator\obj\Debug\EMBA.Validator.pdb
+E:\github\NTU_EMBA\EMBA.Validator\bin\Debug\EMBA.Validator.dll
+E:\github\NTU_EMBA\EMBA.Validator\bin\Debug\EMBA.Validator.pdb
+E:\github\NTU_EMBA\EMBA.Validator\obj\Debug\EMBA.Validator.csprojResolveAssemblyReference.cache
+E:\github\NTU_EMBA\EMBA.Validator\obj\Debug\EMBA.Validator.dll
+E:\github\NTU_EMBA\EMBA.Validator\obj\Debug\EMBA.Validator.pdb
